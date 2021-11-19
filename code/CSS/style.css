@@ -1,0 +1,60 @@
+
+.box1 h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: turquoise;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    word-spacing: 2em;
+        
+}
+.box2 {
+    border: 5px dotted #cccccc;
+    border-radius: 35px;
+    padding: 20px;
+    margin: 28px 0;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+     
+}
+button {
+    background-color: #444444;
+    color: #fff;
+    padding: 15px 15px;
+}
+button:hover {
+    background-color: red;
+}
+
+button:active {
+    background-color: white;
+}
+a {
+    text-decoration: none;
+    color: #555555;
+}
+a:hover {
+    color: cyan;
+}
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#main-block {
+    float: left;
+    width: 70%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#sidebar {
+    float: right;
+    width: 30%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        /* p {
+            color: red;
+        }
+        #para {
+            text-decoration: underline;
+        }
+        .spec {
+            font-style: italic;
+        } */
+
+
+
+
+
+        /* 最后是标签选择器 */
+        /* p {
+            color: red;
+        } */
+        /* id选择器权重最高 */
+        /* #para {
+            color: green;   
+        } */
+        /* 其次是class类选择器 */
+        /* .spec {
+            color: blue;
+        } */
+
+
+
+        /* 权重（2,0,1） */
+        #box1 #box2 p {
+            color: red;
+        }
+        /* /* 权重 （2，1，2） */
+        #box1 div.box2 #box3 p {
+            color: blue;
+        }
+        /* 权重（0,3,1） */
+        .box1 .box2 .box3 p {
+            color: green
+        } */
+
+
+        /* 提升权重，可以再属性后面写!important，大多数公司还是要求不要用 */
+        /* .spec {
+            color: blue !important;
+        } */
+        .list li {
+            color: red;
+        }
+        .spec {
+            color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <p id="para" class="spec">你是重名的人</p>
+    </div> -->
+    <!-- 
+        id选择器>class选择器>标签选择器
+
+        复杂的选择器权重计算
+            通过（id的个数，class个数，标签的个数）计算权重；
+     -->
+     <div id="box1" class="box1">
+         <div id="box2" class="box2">
+             <div id="box3" class="box3">
+                 <p>我是段落</p>
+             </div>
+         </div>
+     </div>
+     <!-- <p id="para" class="spec"></p> -->
+     <ul class="list">
+         <li class="spec">列表1</li>
+         <li class="spec">列表2</li>
+         <li class="spec">列表3</li>
+         <li>列表4</li>
+     </ul>
+</body>
+</html>

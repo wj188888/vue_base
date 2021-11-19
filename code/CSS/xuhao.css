@@ -1,0 +1,25 @@
+.box1 p:first-child {
+    color: aqua;
+}
+.box1 p:last-child {
+    color: paleturquoise;
+}
+
+.box2 p:nth-child(3n+3) {
+    color: green;
+}
+
+/* 选择同种p的第三个：
+    .box4 p:nth-of-type(3) {
+        color: blue;
+    }
+    <div class="box4">
+        <p>我是1号p</p>
+        <p>我是2号p</p>
+        <h3>我是h1</h3>
+        <h3>我是h1</h3>
+        <p>我是3号p</p>
+        <p>我是4号p</p>
+    </div>
+
+    */

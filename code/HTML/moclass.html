@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        a:link {
+            color: dodgerblue;
+        }
+        a:visited {
+            color: forestgreen;
+        }
+        a:hover {
+            color: red;
+        }
+        a:active {
+            font-size: 30px;
+        }
+        /* div>p {
+            color: red;
+        } */
+        div+p {
+            color: blue;
+        }
+        .box>p {
+            color:blueviolet;
+        }
+        h4~span {
+            color: brown;
+        }
+        h4>span {
+            color: rebeccapurple
+        }
+    </style>
+</head>
+<body>
+    <!-- 超级链接就有四种状态:link未被访问；visited，已被访问；hover，鼠标悬停；active，正在被激活的超级链接
+        爱恨准则： LoVe HAte:
+        :link> :visited > :hover > :active;
+        active:是点击鼠标但是没有手松
+    -->
+    <a href="http://www.imooc.com">前往慕课网</a><br>
+    <a href="http://www.jd.com">前往京东网</a>
+    <!-- 子选择器：div > p表示div的子标签p
+        相邻兄弟选择器，img+p，图片后面紧跟着段落将被选择
+        通用兄弟选择器，p~span，p元素之后的所有同层级span元素 -->
+    <div>
+        <p>你是混蛋</p>
+        <p>你是猪头</p>
+        <h1>哈哈
+            <p>你在干啥啊</p>
+        </h1>
+        <a href="http://www.baidu.com" target="_blank"></a>
+    </div>
+    <p>和div一个成绩，所以是相邻兄弟选择器</p>
+    <div class="box">
+        <p>相邻兄弟标签</p>
+    </div>
+    <p>nisa </p>
+    <h4>博良县
+        <span>你是啥啊</span>
+        <span>你是啥啊丶</span>
+        <span>你是啥啊丶</span>
+    </h4>
+    <span>你是忸怩</span>
+    <span>你是忸怩</span>
+    <span>你是忸怩</span>
+    <span>你是忸怩</span><span>你是忸怩</span>
+</body>
+</html>

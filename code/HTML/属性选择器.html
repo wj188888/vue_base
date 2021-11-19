@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* img {
+            width: 400px;
+        } */
+        /* 带空格隔开使用~好 */
+        img[alt~="手机"] {
+            border: 3px solid red;
+        }
+        /* 贷|是以什么开头,你好-我是，“你好” */
+        img[alt|="牛牛"] {
+            border: 3px solid green;
+        }
+        /* 带有alt都是这个样式 */
+        img[alt] {
+
+        }
+        /* 开头 */
+        img[alt^="代码"] {
+
+        }
+        /* 结尾 */
+        img[alt$="视频"] {
+
+        }
+        /* 精准匹配 */
+        img[alt="背景"] {
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 对图片alt进行选择
+        img[alt]
+        img[alt="背景"]
+        img[alt^="背景"]，开头
+        img[alt*="背景"],任意位置
+        img[alt$="背景"],最后
+    -->
+    <img src="../imgs/代码.png" alt="代码 手机">
+    <img src="../imgs/编码.png" alt="编码fada">
+    <img src="../imgs/菜单.png" alt="牛牛-菜单">
+    <img src="../imgs/视频.png" alt="21da视频">
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        /* 在a标签内部文字前添加内容 */
+        a::before {
+            content: "★";
+        }
+        /* 在a标签内部文字后添加内容 */
+        a::after {
+            content: "❤";
+        }
+        /* .box1::selection {
+            background-color: green;
+        } */
+
+        .wj::first-letter {
+            font-size:500%;
+            color:black;
+        }
+        .wj::first-line {
+            border: 10px solid black;
+            background-color: red;
+        }
+        input {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        ::before创建一个伪元素，其将成为匹配选中的元素的第一个子元素，必须设置content属性表示其中的内容；
+     -->
+     <!-- <div>
+         <a href="http://www.baidu.com">百度一下</a>
+         <a href="http://www.baidu.com">百度一下</a>
+         <a href="http://www.baidu.com">百度一下</a>
+         <a href="http://www.baidu.com">百度一下</a>
+     </div>
+     <div class="box1">
+         法案的
+        <p class="box1">大大大阿萨法法大大大阿萨法法</p>
+        <!-- <input type="text"> -->
+        <!-- <textarea name="wj" class="box1" id="myid" cols="30" rows="10">大大大阿萨法法大大大阿萨法法
+        dasdadad1f1da等待</textarea>
+        <div class="box1">牛牛啊</div>
+     </div> --> 
+
+     <div class="wj">
+        你好，我是小A
+     </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .para1 {
+            /* 大小 */
+            font-size: 20px;
+            /* 字体颜色 */
+            color: red;
+        }
+        .para2 {
+            font-size: 20px;
+            /* 字体的粗细 */
+            font-weight: bold;
+            color: green;
+            background-color: hotpink;
+        }
+        .para3 {
+            font-size: 25px;
+            /* 字体的风格 */
+            font-style: italic;
+            background-color: khaki;
+        }
+        .para4 {
+            font-size: 30px;
+            font-style: oblique;
+            /* 字体rgb表示法 */
+            color: rgb(255,0,0,.2);
+        }
+        .para5::first-letter {
+            text-decoration: underline;
+            font-size: 50px;
+            color: #000;
+            /* 字体的背景颜色 */
+            background-color: #ff0033;
+        }
+        .para6::first-line {
+            font-size: 35px;
+            color: rgb(245,255,1);
+            /* 字体的下划线，删除线等 */
+            text-decoration: line-through;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <!-- 十六进制颜色表示法：红-绿-蓝
+        #000黑色，#fff白色
+        color的RGb表示法；第四位是透明度，0是透明，1是实体;;前面的0可以省略
+        rgb(255, 0, 0, .65)
+    -->
+    <!-- 
+        字体：
+        font-size:px
+        font-weight: bold, normal
+        font-style: normal, italic, 
+        font-decoration: 修饰性属性none,underline,line-through;删除线
+
+     -->
+     <p class="para1">雄关漫道真如铁</p>
+     <p class="para2">雄关漫道真如铁</p>
+     <p class="para3">雄关漫道真如铁</p>
+     <p class="para4">雄关漫道真如铁</p>
+     <p class="para5">雄关漫道真如铁</p>
+     <p class="para6">雄关漫道真如铁</p>
+     <p class="para7">雄关漫道真如铁</p>
+     <p class="para8">雄关漫道真如铁</p>
+</body>
+</html>
