@@ -1,0 +1,41 @@
+p {
+    /* 
+     */
+     /* list-style: none; */
+     color: red;
+}
+
+a {
+    text-decoration: none;
+    color: hotpink;
+}
+#wj {
+    color: indigo;
+    background-color: khaki;
+    font-size: 10px 5px 10px;
+}
+/* 后代选择器 
+    可以用很多空格隔开，每个空格代表父与子；
+*/
+.box p {
+    color: red;
+}
+/* 交集选择器 
+    没有空格，
+    任意搭配形成，形成符合选择器；
+*/
+h3.spec {
+    color: green;
+}
+/* 复核选择器
+*/
+div.box p.spec em {
+    color: red;
+}
+div.father a.spec {
+    color: lime;
+}
+div.father p a.spec {
+    color: goldenrod;
+    font-style: italic;
+}

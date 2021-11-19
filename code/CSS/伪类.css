@@ -1,0 +1,27 @@
+a:link {
+    color: red;
+}
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: indigo;
+    font-size: 10px;
+
+}
+
+a:active {
+    color: hotpink;
+    font-size: 30px;
+}
+
+img {
+    width: 300px;
+}
+/* img+p {
+    color: hotpink;
+} */
+img~p {
+    color: red;
+}

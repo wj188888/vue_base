@@ -1,0 +1,23 @@
+伪类：
+a:link
+a:visited
+a:hover
+a:active
+记忆准则：爱恨准则
+
+元素关系选择器：
+div>p	子选择器,必须是父子，不是祖父级；
+img+p	相抵兄弟选择器
+p~span	p元素后的span元素
+
+.box>p	class="box"下的p标签，子标签
+img+p	紧跟后面的一个p,只有一个被选择器到；
+a~b		同层级的span，通用选择器
+
+序号选择器
+:first-child	第一个元素
+:last-child 	最后一个元素
+:nth-child		第三个子元素
+:nth-of-type	第三个某类型元素
+:nth-last-child（3）	倒数第三个子元素
+:nth-last-of-type(2)	同类型倒数第2个

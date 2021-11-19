@@ -1,0 +1,31 @@
+
+.box1 {
+    background-color: silver;
+    color:rgb(12, 104, 104);
+}
+.container {
+    width: 80%;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+.list1 {
+    float: right;
+    width: 80%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* .list1 li:nth-child(even) {
+    background-color: gray;
+} */
+.position-box {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+}
+.position-box h1 {
+    position: absolute;
+}
+.position-box h2 {
+    position: absolute;
+}

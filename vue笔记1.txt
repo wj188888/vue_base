@@ -1,0 +1,27 @@
+一套用于构建用户界面的渐进式javaScript
+谁开发的：
+Vue特点：
+1.采用组件化模式，提高代码复用率，且代码更好维护；
+2.声明式编码，让编码人员无需直接操作DOM，提高开发效率；
+3.使用虚拟DOM+优秀的Diff算法，DIff进行比较；
+
+学习Vue之前，掌握JavaScript基础知识?
+	ES6语法规范；
+	ES6模块化；
+	包管理器；
+	原型丶原型链
+	数组常用方法
+	axios
+	promise
+
+不同浏览器标准不同实现：
+firefox,spiderMonkey
+IE,JScript/Chakra
+Chrome,v8
+
+JavaScript包含：
+	ECMAScript + DOM + BOM（浏览器对象模型）
+输出语句：
+	alert，弹出一个框
+	document，在body输入内容
+	console.log在控制台输出内容
