@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box {
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 100;
+            font-style: italic;
+            color: red;
+            text-align: center;
+        }
+        #box {
+            /* #box符合就近原则 ,就是描述的比较近，要去计算的*/
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 继承标签权重小于选中的标签，如果继承都没有选中标签，
+        然后就要使用就近原则 -->
+
+    <ul class="box" id="box">
+        <li>列表区</li>
+        <li>列表区</li>
+        <li>列表区</li>
+        <li>列表区</li>
+    </ul>
+</body>
+</html>
