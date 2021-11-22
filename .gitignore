@@ -2,3 +2,4 @@ main.cpp
 in/ts.h
 .vscode/*
 !.vscode/tasks.json
+.vscode
