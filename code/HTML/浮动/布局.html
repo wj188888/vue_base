@@ -13,13 +13,13 @@
             width: 1000px;
             height: 100px;
             margin: 0 auto;
-            background-color: #333;
+            /* background-color: #333; */
         }
         .content {
             width: 1000px;
             height: 500px;
             margin: 20px auto;
-            background-color: #333;
+
         }
         footer {
             width: 1000px;
@@ -54,34 +54,39 @@
         }
         .content main {
             float: right;
-            width: 660px;
+            width: 680px;
             height: 500px;
             padding-left: 20px;
             /* background-color: red; */
         }
-        .conten main .qita {
-            width: 660px;
-            height: 400px;
-            /* margin-bottom: 30px; */
-            background-color:  orange;
-            padding-left: 20px;
+        .content main .banner {
+            width: 680px;
+            height: 380px;
+            background-color: orange;
         }
         .content main .pics {
-            width: 660px;
+            width: 680px;
             height: 100px;
             margin-top: 20px;
-            background-color: blue;
+            /* background-color: blue; */
         }
         .content main .pics ul {
+            /* 去掉小圆点 */
             list-style: none;
         }
         .content main .pics ul li {
             float: left;
-            width: 170px;
+            width: 160px;
             height: 100px;
             background-color: blue;
             margin-right: 10px;
+
         }
+        .content main .pics ul li:last-child {
+            width: 170px;
+            margin-right: 0;
+        }
+
     </style>
 </head>
 <body>
@@ -93,7 +98,7 @@
     <section class="content">
         <aside class="ad"></aside>
         <main>
-            <div class="qita"></div>
+            <div class="banner"></div>
             <div class="pics">
                 <ul>
                     <li></li>
@@ -102,7 +107,6 @@
                     <li></li>
                 </ul>
             </div>
-            
             
         </main>
     </section>
