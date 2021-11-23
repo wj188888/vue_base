@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .carouse1 {
+            width: 741px;
+            height: 471;
+            border: 1px solid #333;
+            margin: 0 auto;
+            position: relative;
+        }
+        .carouse1 .btn {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 1px solid orange;
+            background-color: rgba(255, 255, 1,.5);
+            top: 50%;
+            margin-top: -20px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        
+        .carouse1 .btn:hover {
+            background-color: gold;
+            color: white;
+        }
+        .carouse1 .leftbtn {
+            left: 10px;
+        }
+        .carouse1 .rightbtn {
+            right: 10px;
+        
+        }
+        .carouse1 ol {
+            position: absolute;
+            width: 95px;
+            height: 25px;
+            right: 20px;
+            bottom: 20px;
+            /* background-color: green; */
+        }
+        .carouse1 ol li {
+            float: left;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border-radius: 50%;
+            background-color: gold;
+            list-style: none;
+        }
+        .carouse1 ol li:last-child {
+            /* width: 20px; */
+            margin-right: 0;
+        }
+        .carouse1 ol li:hover {
+            width: 25px;
+            height: 25px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="carouse1">
+        <img src="../imgs/背景.png" alt="beijing">
+        <a class="leftbtn btn">&lt;</a>
+        <a class="rightbtn btn">&gt;</a>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+</body>
+</html>
