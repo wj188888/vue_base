@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.headers {
+    /* float: left; */
+    width: 1920px;
+    height: 64px;
+    background-color: aquamarine;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+.headers .box1 {
+    float: left;
+    width: 432px;
+    height: 64px;
+    background-color: palegoldenrod;
+}
+.headers .box1 .logo {
+    float: left;
+    width: 142px;
+    height: 36px;
+    margin: 14px 74px 14px 24px;
+    background-color: orange;
+}
+.headers .box1 .proname {
+    float: left;
+    width: 180px;
+    height: 24px;
+    background-color: orange;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    margin-top: 21px;
+    margin-bottom: 19px;
+}
+.headers .box1 .prolist {
+    float: left;
+    width: 8px;
+    height: 6px;
+    background: #000000;
+}
