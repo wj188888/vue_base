@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 去掉所有ul和ol的原点 */
+ul, ol {
+    list-style: none;
+}
+/* 去掉下划线 */
+a {
+    text-decoration: none;
+}
+
+body {
+    font-style: normal 14px/25px 微软雅黑;
+}
+header .header-top {
+    width: 1201px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header .header-top .logo {
+    padding-top: 27px;
+    width: 221px;
+    height: 63px;
+}
+header .header-top .logo h1 {
+    float: left;
+    width: 221px;
+    height: 63px;
+    background-color: orange;
+}
+header .header-top .tool {
+    float: right;
+    width: 266px;
+    height: 77px;
+    background-color: green;
+}
