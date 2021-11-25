@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            /* background-color: red; */
+            border: 1px solid #333;
+            margin-bottom: 20px;
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            /* background-color: green; */
+            border: 1px dashed #333;
+            margin-bottom: 20px;
+        }
+        .box3 {
+            width: 100px;
+            height: 100px;
+            /* background-color: green; */
+            border: 1px dotted #333;
+            margin-bottom: 20px;
+        }
+        section {
+            float: left;
+            width: 100px;
+            height: 100px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: #333;
+            margin-right: 20px;
+        }
+        section.spec {
+            border-color: orange;
+            border-width: 5px;
+            border-style: dotted;
+            /* background-color: red; */
+        }
+        .box4 {
+            margin-top: 300px;
+            width: 200px;
+            height: 200px;
+            border-top: 1px solid #333;
+            border-right: 2px dotted #00ff22;
+            border-bottom: 2px dashed red;
+            border-left: 3px solid green;
+            border-left: none;
+        }
+        .box5 {
+            width: 0;
+            height: 0;
+            /* 设置为透明色transparent */
+            border: 20px solid transparent;
+            border-left-color: #00ff22;
+            border-bottom-color: red;
+            border-right-color: #333;
+            border-top-color: royalblue;
+        }
+        .box6 {
+            width: 200px;
+            height: 200px;
+            /* border-radius: 100%; */
+            border: 2px solid #00ff22;
+            border-radius: 20% 100% 20% 100%;
+        }
+        .box7 {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            border: 2px solid #00ff22;
+            border-radius: 50%;
+        }
+        .box8 {
+            margin-top: 20px;
+            width: 300px;
+            height: 400px;
+            border: 2px solid #00ff22;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <section></section>
+    <section></section>
+    <section class="spec"></section>
+    <section></section>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+</body>
+</html>
