@@ -20,10 +20,67 @@
             background-size: cover;
             margin-bottom: 20px;
         }
+        .box3 {
+            position: relative;
+            top: 100px;
+            left: 100px;
+            width: 500px;
+            height: 300px;
+            border: 1px solid #333;
+            background-image: url(../../imgs/代码.png);
+            background-size: 20% auto;
+            margin-bottom: 20px;
+        }
+        .box4 {
+            margin-left:700px;
+            margin-top: 20px;
+            width: 500px;
+            height: 300px;
+            background-image: url(../../imgs/编程.png);
+            background-clip: border-box;
+            border: 3px dotted #333;
+        }
+        .box5 {
+            margin-top: 300px;
+            width: 500px;
+            height: 300px;
+            background-image: url(../../imgs/编程.png);
+            /* 背景裁剪到padding区域，此时就不会再点状线，虚线边框地下渲染 */
+            background-clip: padding-box;
+            border: 3px dotted #333;
+        }
+        .box6 {
+            margin-top: 300px;
+            width: 500px;
+            height: 300px;
+            background-image: url(../../imgs/编程.png);
+            /* 背景裁切到内容区域 */
+            background-clip: content-box;
+            background-size: 20% auto;
+            border: 3px dotted #333;
+            /* 背景起源 */
+            background-origin: content-box;
+        }
+        .box7 {
+            margin-top: 200px;
+            margin-left: 200px;
+            width: 500px;
+            height: 500px;
+            background-image: url(../../imgs/视频.png);
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: 50% auto;
+        }
     </style>
 </head>
 <body>
     <div class="box1"></div>
     <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+
 </body>
 </html>
