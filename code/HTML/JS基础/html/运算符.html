@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a;
+        a = 6;
+        a *= 2;
+        a += 3;
+        a /= 3;
+        console.log(a);
+        var b = 3;
+        var c = b++;
+        var d = ++a;
+        console.log(c);
+        console.log(d);
+
+        var year;
+        year = Number(prompt("请输入年份"));
+        // 能被4整除，不能被100整除；
+        // 能被100整除，且能被400整除；
+        alert((year % 4 ==0 && year % 100 != 0) || (year % 100 ==0 && year % 400 == 0));
+    </script>
+</body>
+</html>
