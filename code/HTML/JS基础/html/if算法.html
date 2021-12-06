@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = Number(prompt("请输入一个三位数的数字"))
+
+        // 用户输入的数字，进行合法性验证
+        if(!isNaN(num) && 100 < num && num < 999) {
+            // 当用户输入的数字是合法时
+            // 数学方法
+            // 把数字num转成字符串
+            var n_str = num.toString();
+            // 百位
+            var a = Number(n_str.charAt(0));
+            // 十位
+            var b = Number(n_str.charAt(1));
+            // 各位
+            var c = Number(n_str.charAt(2));
+
+            // 根据水仙花数的条件进行判断，pow的立方
+            if(Math.pow(a,3)+ Math.pow(b, 3) + Math.pow(c, 3) == num) {
+                alert('这个数字是水仙花数');
+            }
+            else {
+                alert("这个数字不是水仙花数");
+            }
+        } 
+        else {
+            // 输入不合法
+            alert("您输入的数字不合法的");
+        }
+    </script>
+</body>
+</html>

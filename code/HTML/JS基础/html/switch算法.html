@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 当一个变量被分类讨论的情形 -->
+    <script>
+        // 要求输入一个1-12的任意一个数字，显示这个月份的天数；
+        var month = Number(prompt("请输入一个月份数"));
+        // switch 后面是一个表达式；
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                alert("这个月有31天");
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                alert("这个月有30天");
+                break;
+            case 2:
+                alert("这个月有28天或29天");
+                break;
+            default:
+                alert("请输入正确的月份");
+        }
+        // break语句什么功能：程序必须要主动调用break来跳出switch语句体;
+        // 则后面的所有case都将被视为匹配，直到遇到break;
+    </script>
+</body>
+</html>
