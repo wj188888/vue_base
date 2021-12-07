@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建累加器
+        var sum = 0;
+        // 遍历1到100的每一个数字，遍历一个数字就要加上这个数字到sum中去
+        for (var i = 1;i <= 100; i++) {
+            // 创建累加器
+            if (i % 3==1 && i % 4 == 2 && i % 5 == 3) {
+                console.log(i)
+            }
+            sum += i;
+        }
+        console.log(sum);
+    </script>
+</body>
+</html>

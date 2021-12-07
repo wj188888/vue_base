@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var n = 0;s
+        // 随机数函数，Math.random().得到0与1之间的小数；
+        // 问题
+        // 请编写程序，随机生成两个变量dx和dy，它们均在[-4, 4]区间随机取值，但要求dx和dy不能同时为0;
+        do {
+            var dx = parseInt(Math.random()*9) - 4;
+            var dy = parseInt(Math.random()*9) - 4;
+        
+        } while(dx == 0 && dy == 0)
+        console.log(dx, dy);
+    </script>
+</body>
+</html>
