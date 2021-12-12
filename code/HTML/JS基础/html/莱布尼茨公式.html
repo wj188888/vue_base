@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 保留几位小数
+        var num = parseInt(prompt("请输入一个数字，保留π的为数："));
+        var result = 1;
+        var sum = 0;
+        for(var i = num; i > 0; i--) {
+            result *= i / (2 * i + 1);
+            sum += result;
+        }
+        alert(result);
+        alert(sum);
+    </script>
+</body>
+</html>
