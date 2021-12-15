@@ -21,6 +21,32 @@
 
         // 数组的长度
         console.log(arr1.length);
+        // push(""):在尾部插入，pop():在尾部删除；shift():删除头部一个；unshift：在头部前加入数据；
+
+        // 常用方法二：
+        // splice()方法用于替换数组中的指定项;
+        arr1.splice(3,2, 123, 4356, 987);
+        console.log(arr1);
+
+        // splice可以指定位置插入新项；第二个参数为0
+        arr1.splice(2,0,"778", 982, 6532);
+        console.log(arr1);
+
+        // splice可以指定删除指定项
+        var  arr4 = ['A', 'B', 'C', 'D', 'E', 'F'];
+        items = arr4.splice(2,3);
+        console.log(arr4);
+        console.log(items);
+
+        // slice()方法：用于得到子数组，雷士与字符串的slice方法,截取数组
+        // 如果不停工第二个参数，表示指定箱开始，提取所有后续的所有；
+        var arr5 = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+        // 截取数组的第二项到第五项，但是不包括第五项的
+        child_arr5 = arr5.slice(2,5);
+        console.log(arr5);
+        console.log(child_arr5);
+
+        
     </script>
 </body>
 </html>

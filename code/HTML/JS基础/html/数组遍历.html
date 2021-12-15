@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 求数组中每一项的总和丶平均数
+        // 求数组项的最大值和最小值
+        var scoreArr = [98,87,98,96,89,87,88,98,100];
+        
+        // 累加器
+        var sum = 0;
+        for (var i=0; i < scoreArr.length; i++) {
+            sum += scoreArr[i]
+        }
+        console.log(sum);
+
+
+        // 求数组的最大值和最小值
+        var arrx = [98, 12,100, 1];
+
+        var max = arrx[0];
+        var min = arrx[0];
+
+        // 遍历数组，下标为1的项开始遍历
+        for(var i=1;i < arrx.length; i++) {
+            if(arrx[i] > max) {
+                max = arrx[i]
+            } else if(arrx[i] < min) {
+                min = arrx[i]
+            }
+        }
+        console.log(max);
+        console.log(min);
+    </script>
+</body>
+</html>

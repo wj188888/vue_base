@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 数组的join()方法可以使数组转为字符串；字符串的split()方法可使字符串转为数组;
+        var arr1 = [123,5433,'你司', 12352, 9877];
+        var str2 = arr1.join('');
+        console.log(str2);
+        console.log(typeof(str2));
+
+        var str1 = "123dadalfkao阿达科技kslda";
+        var arr2 = str1.split('');
+        console.log(arr2);
+
+        // 字符串也可以使用方括号来表示数组的内容;
+        var str3 =  '我爱骆瑶';
+        console.log(str3[1]);
+
+        // concat()方法；
+        var arrx = [1,2,3,45,6];
+        var arry = [7,8,9];
+        var arr = arrx.concat(arry);
+        console.log(arr);
+
+        // reverse方法是将全部项顺序置反；只有数组可以使用这个函数;
+        console.log('ABCDEFG'.split('').reverse().join(''))
+
+        // indexOf()和includes()方法
+        // indexOf()是检索数组的某一个数值,返回该值在数组中的位置；
+        // 和includes()检查某一项是否在数组中，返回true 或 false
+        console.log('ABCDEFG'.indexOf('A'));
+        console.log('ABCDEFG'.includes('A'));
+
+    </script>
+</body>
+</html>
