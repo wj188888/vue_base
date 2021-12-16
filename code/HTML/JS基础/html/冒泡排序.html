@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 冒泡排序
+        var arr = [6,2,9,3,8,1];
+        var num = 0;
+        // 一趟一趟比较，趟数序号就是i
+        for (var i = 1; i< arr.length; i++) {
+            for (var j = arr.length-1; i <= j; j--) {
+                if(arr[j] < arr[j-1]) {
+                    var temp=arr[j-1];
+                    arr[j-1] = arr[j];
+                    arr[j] = temp;
+                }
+            num++;
+            }
+        }
+        console.log(arr);
+        console.log(num);
+    </script>
+</body>
+</html>
